@@ -3,7 +3,7 @@
     "target": "ES2022",
     "lib": ["ES2023", "DOM", "DOM.Iterable"],
     "module": "ESNext",
-    "moduleResolution": "Bundler",
+    "moduleResolution": "node",
     "allowJs": false,
     "strict": true,
     "noEmit": true,
@@ -14,7 +14,9 @@
     "resolveJsonModule": true,
     "isolatedModules": true,
     "baseUrl": ".",
-    "paths": {}
+    "paths": {
+      "@/*": ["app/*"]
+    }
   },
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],
   "exclude": ["node_modules"]
